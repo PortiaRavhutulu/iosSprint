@@ -9,14 +9,14 @@ import UIKit
 
 class ToDoViewController: UIViewController {
     //var array = ["A", "B", "C"]
-    var searchingArray = [String]()
+    var searchingArray = [Employee]()
     var searching = false
-    var array = [Todo]()
+    var array = [Employee]()
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchApiData(URL: "https://jsonplaceholder.typicode.com/todos") { result in
+        fetchApiData(URL: "http://localhost:8080/employee/getEmployees") { result in
             self.array = result
             
 //            print(result)
@@ -26,14 +26,14 @@ class ToDoViewController: UIViewController {
         }
     }
     
-    func fetchApiData(URL url: String , completion: @escaping([Todo]) -> Void){
+    func fetchApiData(URL url: String , completion: @escaping([Employee]) -> Void){
         let url = URL(string: url)
         let session = URLSession.shared
         
         let dataTask = session.dataTask(with: url!) { data, response, error in
             if data != nil && error == nil {
                 do {
-                    let parsingData = try JSONDecoder().decode([Todo].self, from: data!)
+                    let parsingData = try JSONDecoder().decode([Employee].self, from: data!)
                     completion(parsingData)
                 } catch {
                     print("parsing error")
@@ -52,23 +52,28 @@ class ToDoViewController: UIViewController {
 extension ToDoViewController: UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //            if searching{
-        //                return searchingArray.count
-        //            } else {
-        //                return array.count
-        //            }
-        return array.count
+        if searching{
+            return searchingArray.count
+        } else {
+            return array.count
+        }
+        // return array.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoTableViewCell", for: indexPath) as? ToDoTableViewCell
         else {return UITableViewCell()}
         if searching {
-            cell.textLabel?.text = searchingArray[indexPath.row]
+            cell.textLabel?.text = "\(searchingArray[indexPath.row].empName)"
         } else {
-            cell.title.text = array[indexPath.row].title
+            cell.id.text = "\(array[indexPath.row].empId)"
+            cell.title.text = array[indexPath.row].empName
             //cell.id.text = String(data[indexPath.row].id)
-            cell.id.text = "\(array[indexPath.row].id)"
+            cell.lastName.text = "\(array[indexPath.row].empLastName)"
+            cell.cellNumber.text = "\(array[indexPath.row].cellNumber)"
+            cell.email.text = "\(array[indexPath.row].email)"
+            cell.role.text = "\(array[indexPath.row].role)"
+            cell.salary.text = "\(array[indexPath.row].salary)"
         }
         
         return cell
@@ -85,7 +90,7 @@ extension ToDoViewController: UITableViewDataSource, UITableViewDelegate, UISear
         tableView.endUpdates()
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        //            searchingArray = array.filter({ $0.lowercased().prefix(searchText.count) == searchText.lowercased()})
+        searchingArray = array.filter({$0.empName.lowercased().prefix(searchText.count) == searchText.lowercased()})
         searching = true
         tableView.reloadData()
     }
@@ -94,8 +99,13 @@ extension ToDoViewController: UITableViewDataSource, UITableViewDelegate, UISear
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController
         
-        vc?.num = "\(array[indexPath.row].id)"
-        vc?.titleDets = array[indexPath.row].title
+        vc?.num = "\(array[indexPath.row].empId)"
+        vc?.titleDets = array[indexPath.row].empName
+        vc?.lName = array[indexPath.row].empLastName
+        vc?.cellNum = array[indexPath.row].cellNumber
+        vc?.empEmail = array[indexPath.row].email
+        vc?.empRole = array[indexPath.row].role
+        vc?.empSalary = "R \(array[indexPath.row].salary)"
         
         self.navigationController?.pushViewController(vc!, animated: true)
         

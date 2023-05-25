@@ -13,14 +13,18 @@
 import Foundation
 
 // MARK: - Todo Model
-struct Todo: Codable {
-    let userID, id: Int
-    let title: String
-    let completed: Bool
+struct Employee: Codable {
+    let empId: Int
+    let empName: String
+    let empLastName: String
+    let cellNumber: String
+    let email: String
+    let role: String
+    let salary: Int
 
     enum CodingKeys: String, CodingKey {
-        case userID = "userId"
-        case id, title, completed
+        case empId = "empId"
+        case empName, empLastName, cellNumber, email, role, salary
     }
 }
 

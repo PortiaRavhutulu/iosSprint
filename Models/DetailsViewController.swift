@@ -12,7 +12,17 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var titleDetails: UILabel!
     @IBOutlet weak var number: UILabel!
     
+    @IBOutlet weak var role: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var salary: UILabel!
+    @IBOutlet weak var cellNumber: UILabel!
+    @IBOutlet weak var lastName: UILabel!
     var titleDets: String?
+    var lName: String?
+    var cellNum: String?
+    var empEmail: String?
+    var empRole: String?
+    var empSalary: String?
     var num: String?
     
     override func viewDidLoad() {
@@ -20,6 +30,11 @@ class DetailsViewController: UIViewController {
 
         number.text = num
         titleDetails.text = titleDets
+        lastName.text = lName
+        cellNumber.text = cellNum
+        email.text = empEmail
+        role.text = empRole
+        salary.text = empSalary
     }
     
 
