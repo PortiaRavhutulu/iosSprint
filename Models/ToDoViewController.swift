@@ -85,7 +85,7 @@ extension ToDoViewController: UITableViewDataSource, UITableViewDelegate, UISear
         tableView.endUpdates()
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchingArray = array.filter({$0.empName.lowercased().prefix(searchText.count) == searchText.lowercased()})
+        searchingArray = array.filter({$0.empName.lowercased().prefix(searchText.count) == searchText.lowercased() || $0.empLastName.lowercased().prefix(searchText.count) == searchText.lowercased()})
         searching = true
         tableView.reloadData()
     }
