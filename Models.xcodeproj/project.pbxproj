@@ -17,6 +17,7 @@
 		4A693D412A1E07CB005D9201 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A693D402A1E07CB005D9201 /* ToDoTableViewCell.swift */; };
 		4A693D432A1E1FF9005D9201 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A693D422A1E1FF9005D9201 /* Model.swift */; };
 		4A693D452A1E487A005D9201 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A693D442A1E487A005D9201 /* DetailsViewController.swift */; };
+		4C1732942A1F9B8900CA244E /* AddEmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1732932A1F9B8900CA244E /* AddEmployeeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4A693D402A1E07CB005D9201 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		4A693D422A1E1FF9005D9201 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4A693D442A1E487A005D9201 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		4C1732932A1F9B8900CA244E /* AddEmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				4A693D332A1DFF56005D9201 /* Assets.xcassets */,
 				4A693D352A1DFF56005D9201 /* LaunchScreen.storyboard */,
 				4A693D382A1DFF56005D9201 /* Info.plist */,
+				4C1732932A1F9B8900CA244E /* AddEmployeeVC.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1732942A1F9B8900CA244E /* AddEmployeeVC.swift in Sources */,
 				4A693D3F2A1E0792005D9201 /* ToDoViewController.swift in Sources */,
 				4A693D2F2A1DFF55005D9201 /* ViewController.swift in Sources */,
 				4A693D2B2A1DFF55005D9201 /* AppDelegate.swift in Sources */,

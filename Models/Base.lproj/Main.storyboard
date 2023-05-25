@@ -167,7 +167,6 @@
         <!--Details View Controller-->
         <scene sceneID="tte-yV-GLs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9eo-R8-49P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Eze-ux-fAs" customClass="DetailsViewController" customModule="Models" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uko-7U-ave">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -262,13 +261,14 @@
                         <outlet property="titleDetails" destination="cFm-nu-G7R" id="6Jo-Sa-oxb"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9eo-R8-49P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2580.9160305343512" y="3.5211267605633805"/>
         </scene>
         <!--Add Employee-->
         <scene sceneID="Nte-8v-yMK">
             <objects>
-                <viewController id="g9N-gx-jog" sceneMemberID="viewController">
+                <viewController id="g9N-gx-jog" customClass="AddEmployeeVC" customModule="Models" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fS4-LX-58g">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,15 +301,15 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB2-rw-9Zs">
-                                                <rect key="frame" x="20" y="197" width="29" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB2-rw-9Zs">
+                                                <rect key="frame" x="20" y="197" width="35" height="17"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGb-8s-1lv">
-                                                <rect key="frame" x="20" y="246" width="41" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGb-8s-1lv">
+                                                <rect key="frame" x="20" y="246" width="29" height="17"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
@@ -327,13 +327,13 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g Junior Developer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0oT-Xw-zMi">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g abc123@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0oT-Xw-zMi">
                                                 <rect key="frame" x="137" y="180" width="150" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g R 15 000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-eM-KFK">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g Junior Developer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-eM-KFK">
                                                 <rect key="frame" x="137" y="239" width="150" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -347,7 +347,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2c-e6-0jZ">
-                                                <rect key="frame" x="210" y="329" width="67" height="30"/>
+                                                <rect key="frame" x="220" y="385" width="67" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Cancel">
@@ -370,13 +370,29 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6y-Lx-CNI">
-                                                <rect key="frame" x="105" y="329" width="70" height="31"/>
+                                                <rect key="frame" x="107" y="385" width="70" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Submit">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnAddEmployee:" destination="g9N-gx-jog" eventType="touchUpInside" id="pn8-76-yFH"/>
+                                                </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcH-nf-BwX">
+                                                <rect key="frame" x="20" y="293" width="41" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g R 15 000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dq2-Zf-XUu">
+                                                <rect key="frame" x="137" y="295" width="150" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <viewLayoutGuide key="contentLayoutGuide" id="qxT-NU-GGl"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="FxZ-fg-MgC"/>
@@ -398,6 +414,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Employee" id="cU2-gv-TSW"/>
+                    <connections>
+                        <outlet property="cellNumber" destination="RO1-iI-LBH" id="cxn-yu-hA8"/>
+                        <outlet property="email" destination="0oT-Xw-zMi" id="Epw-bx-ZKf"/>
+                        <outlet property="firstName" destination="l8Z-cM-LPT" id="5Ct-9B-swe"/>
+                        <outlet property="lastName" destination="SYU-J7-9fI" id="ZVO-VC-Euq"/>
+                        <outlet property="role" destination="kAe-eM-KFK" id="leU-GB-UBv"/>
+                        <outlet property="salary" destination="Dq2-Zf-XUu" id="gr0-2w-lPV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nrd-oO-aq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
