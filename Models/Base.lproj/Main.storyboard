@@ -73,89 +73,40 @@
                                 <rect key="frame" x="0.0" y="159" width="393" height="597"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoTableViewCell" rowHeight="245" id="LXZ-01-Mod" customClass="ToDoTableViewCell" customModule="Models" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="245"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoTableViewCell" rowHeight="87" id="LXZ-01-Mod" customClass="ToDoTableViewCell" customModule="Models" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LXZ-01-Mod" id="fHq-ch-OvC">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="245"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstName:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUJ-cP-LzH">
-                                                    <rect key="frame" x="30" y="52" width="333" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmpId: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luV-NO-oZ8">
-                                                    <rect key="frame" x="30" y="21" width="333" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="FirstName:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUJ-cP-LzH">
+                                                    <rect key="frame" x="30" y="21" width="341" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LastName:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8E-Vv-ihL">
-                                                    <rect key="frame" x="30" y="83" width="333" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CellNumber:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpS-KT-she">
-                                                    <rect key="frame" x="30" y="114" width="333" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnz-JQ-geg">
-                                                    <rect key="frame" x="30" y="145" width="333" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohv-HL-CbN">
-                                                    <rect key="frame" x="30" y="176" width="333" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKU-1V-0O3">
-                                                    <rect key="frame" x="30" y="207" width="333" height="21"/>
+                                                    <rect key="frame" x="30" y="44" width="341" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="PUJ-cP-LzH" secondAttribute="trailing" constant="10" id="13j-vr-pBE"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bnz-JQ-geg" secondAttribute="trailing" constant="10" id="7T8-6s-AkA"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="T8E-Vv-ihL" secondAttribute="trailing" constant="10" id="AtT-Gf-u6S"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="luV-NO-oZ8" secondAttribute="trailing" constant="10" id="L8t-Fz-BTZ"/>
-                                                <constraint firstItem="bKU-1V-0O3" firstAttribute="leading" secondItem="fHq-ch-OvC" secondAttribute="leadingMargin" constant="10" id="LIb-jT-94e"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bKU-1V-0O3" secondAttribute="trailing" constant="10" id="Mdu-Un-qnB"/>
-                                                <constraint firstItem="T8E-Vv-ihL" firstAttribute="top" secondItem="PUJ-cP-LzH" secondAttribute="bottom" constant="10" id="OAt-CK-8oD"/>
-                                                <constraint firstItem="GpS-KT-she" firstAttribute="leading" secondItem="fHq-ch-OvC" secondAttribute="leadingMargin" constant="10" id="PdF-dn-st5"/>
-                                                <constraint firstItem="GpS-KT-she" firstAttribute="top" secondItem="T8E-Vv-ihL" secondAttribute="bottom" constant="10" id="VCA-3P-oju"/>
-                                                <constraint firstItem="T8E-Vv-ihL" firstAttribute="leading" secondItem="fHq-ch-OvC" secondAttribute="leadingMargin" constant="10" id="W41-MY-J6e"/>
-                                                <constraint firstItem="PUJ-cP-LzH" firstAttribute="top" secondItem="luV-NO-oZ8" secondAttribute="bottom" constant="10" id="W7u-gZ-bYd"/>
-                                                <constraint firstItem="bnz-JQ-geg" firstAttribute="leading" secondItem="fHq-ch-OvC" secondAttribute="leadingMargin" constant="10" id="WS5-CH-Hhn"/>
-                                                <constraint firstItem="bKU-1V-0O3" firstAttribute="top" secondItem="ohv-HL-CbN" secondAttribute="bottom" constant="10" id="X5i-9c-VjN"/>
-                                                <constraint firstItem="bnz-JQ-geg" firstAttribute="top" secondItem="GpS-KT-she" secondAttribute="bottom" constant="10" id="Yc1-rH-6Oe"/>
-                                                <constraint firstItem="luV-NO-oZ8" firstAttribute="top" secondItem="fHq-ch-OvC" secondAttribute="topMargin" constant="10" id="biY-Vd-zXl"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ohv-HL-CbN" secondAttribute="trailing" constant="10" id="bzJ-Xa-bEA"/>
-                                                <constraint firstItem="luV-NO-oZ8" firstAttribute="leading" secondItem="fHq-ch-OvC" secondAttribute="leadingMargin" constant="10" id="dc9-Hc-TfV"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="GpS-KT-she" secondAttribute="trailing" constant="10" id="j6S-C4-eUT"/>
-                                                <constraint firstItem="PUJ-cP-LzH" firstAttribute="leading" secondItem="luV-NO-oZ8" secondAttribute="leading" id="qof-f0-S4R"/>
-                                                <constraint firstItem="PUJ-cP-LzH" firstAttribute="leading" secondItem="fHq-ch-OvC" secondAttribute="leadingMargin" constant="10" id="tCT-9J-Vfo"/>
-                                                <constraint firstItem="ohv-HL-CbN" firstAttribute="top" secondItem="bnz-JQ-geg" secondAttribute="bottom" constant="10" id="uyv-XC-n2P"/>
-                                                <constraint firstItem="ohv-HL-CbN" firstAttribute="leading" secondItem="fHq-ch-OvC" secondAttribute="leadingMargin" constant="10" id="vni-Zo-koI"/>
+                                                <constraint firstItem="T8E-Vv-ihL" firstAttribute="leading" secondItem="fHq-ch-OvC" secondAttribute="leadingMargin" constant="10" id="3rC-Li-imL"/>
+                                                <constraint firstItem="PUJ-cP-LzH" firstAttribute="leading" secondItem="fHq-ch-OvC" secondAttribute="leadingMargin" constant="10" id="XUm-Rw-6KX"/>
+                                                <constraint firstItem="PUJ-cP-LzH" firstAttribute="top" secondItem="fHq-ch-OvC" secondAttribute="topMargin" constant="10" id="dS3-KH-wuX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="T8E-Vv-ihL" secondAttribute="trailing" constant="2" id="fsn-Yz-2dd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="T8E-Vv-ihL" secondAttribute="bottom" constant="10" id="ia4-Jl-0h6"/>
+                                                <constraint firstItem="T8E-Vv-ihL" firstAttribute="leading" secondItem="PUJ-cP-LzH" secondAttribute="leading" id="kFw-hB-18S"/>
+                                                <constraint firstItem="T8E-Vv-ihL" firstAttribute="top" secondItem="PUJ-cP-LzH" secondAttribute="bottom" constant="2" id="kbd-Oi-3yd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PUJ-cP-LzH" secondAttribute="trailing" constant="2" id="no7-Xk-Rjg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cellNumber" destination="GpS-KT-she" id="4eZ-67-08I"/>
-                                            <outlet property="email" destination="bnz-JQ-geg" id="cAd-xu-hqc"/>
-                                            <outlet property="id" destination="luV-NO-oZ8" id="l6a-NR-HfI"/>
-                                            <outlet property="lastName" destination="T8E-Vv-ihL" id="M3X-bc-Fy5"/>
-                                            <outlet property="role" destination="ohv-HL-CbN" id="e0y-tZ-NIh"/>
-                                            <outlet property="salary" destination="bKU-1V-0O3" id="GpS-gO-7nr"/>
-                                            <outlet property="title" destination="PUJ-cP-LzH" id="fXv-9i-r9E"/>
+                                            <outlet property="firstName" destination="PUJ-cP-LzH" id="zfp-e8-XZ8"/>
+                                            <outlet property="lastName" destination="T8E-Vv-ihL" id="WG2-tz-hQX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

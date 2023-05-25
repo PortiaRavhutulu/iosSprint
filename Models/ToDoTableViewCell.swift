@@ -8,18 +8,9 @@
 import UIKit
 
 class ToDoTableViewCell: UITableViewCell {
-   
-
-    @IBOutlet weak var id: UILabel!
     
-
-    @IBOutlet weak var salary: UILabel!
-    @IBOutlet weak var role: UILabel!
-    @IBOutlet weak var email: UILabel!
-    @IBOutlet weak var cellNumber: UILabel!
     @IBOutlet weak var lastName: UILabel!
-    @IBOutlet weak var title: UILabel!
-    
+    @IBOutlet weak var firstName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
