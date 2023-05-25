@@ -64,16 +64,11 @@ extension ToDoViewController: UITableViewDataSource, UITableViewDelegate, UISear
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoTableViewCell", for: indexPath) as? ToDoTableViewCell
         else {return UITableViewCell()}
         if searching {
-            cell.textLabel?.text = "\(searchingArray[indexPath.row].empName)"
+            cell.firstName.text = "\(searchingArray[indexPath.row].empName)"
+            cell.lastName.text = "\(searchingArray[indexPath.row].empLastName)"
         } else {
-            cell.id.text = "\(array[indexPath.row].empId)"
-            cell.title.text = array[indexPath.row].empName
-            //cell.id.text = String(data[indexPath.row].id)
-            cell.lastName.text = "\(array[indexPath.row].empLastName)"
-            cell.cellNumber.text = "\(array[indexPath.row].cellNumber)"
-            cell.email.text = "\(array[indexPath.row].email)"
-            cell.role.text = "\(array[indexPath.row].role)"
-            cell.salary.text = "\(array[indexPath.row].salary)"
+            cell.firstName.text = array[indexPath.row].empName
+            cell.lastName.text = array[indexPath.row].empLastName
         }
         
         return cell
@@ -99,13 +94,23 @@ extension ToDoViewController: UITableViewDataSource, UITableViewDelegate, UISear
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController
         
-        vc?.num = "\(array[indexPath.row].empId)"
-        vc?.titleDets = array[indexPath.row].empName
-        vc?.lName = array[indexPath.row].empLastName
-        vc?.cellNum = array[indexPath.row].cellNumber
-        vc?.empEmail = array[indexPath.row].email
-        vc?.empRole = array[indexPath.row].role
-        vc?.empSalary = "R \(array[indexPath.row].salary)"
+        if searching {
+            vc?.num = "Employee ID: \(searchingArray[indexPath.row].empId)"
+            vc?.titleDets = "First name: \(searchingArray[indexPath.row].empName)"
+            vc?.lName = "Last name: \(searchingArray[indexPath.row].empLastName)"
+            vc?.cellNum = "Cell number: \(searchingArray[indexPath.row].cellNumber)"
+            vc?.empEmail = "Email: \(searchingArray[indexPath.row].email)"
+            vc?.empRole = "Role: \(searchingArray[indexPath.row].role)"
+            vc?.empSalary = "Salary: R \(searchingArray[indexPath.row].salary)"
+        } else {
+            vc?.num = "Employee ID: \(array[indexPath.row].empId)"
+            vc?.titleDets = "First name: \(array[indexPath.row].empName)"
+            vc?.lName = "Last name: \(array[indexPath.row].empLastName)"
+            vc?.cellNum = "Cell number: \(array[indexPath.row].cellNumber)"
+            vc?.empEmail = "Email: \(array[indexPath.row].email)"
+            vc?.empRole = "Role: \(array[indexPath.row].role)"
+            vc?.empSalary = "Salary: R \(array[indexPath.row].salary)"
+        }
         
         self.navigationController?.pushViewController(vc!, animated: true)
         
