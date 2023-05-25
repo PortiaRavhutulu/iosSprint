@@ -16,15 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UserLogo" translatesAutoresizingMaskIntoConstraints="NO" id="RK4-SA-W9S">
-                                <rect key="frame" x="80" y="172" width="233" height="351"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserLogo" translatesAutoresizingMaskIntoConstraints="NO" id="RK4-SA-W9S">
+                                <rect key="frame" x="61.666666666666657" y="159" width="270" height="315"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Vww-kN-6qX"/>
-                                    <constraint firstAttribute="width" constant="200" id="yd6-BR-wsk"/>
+                                    <constraint firstAttribute="height" constant="315" id="Abq-kf-5YP"/>
+                                    <constraint firstAttribute="width" constant="270" id="YSr-cP-uWF"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Employee  Management System" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHf-Z2-Iea">
-                                <rect key="frame" x="51" y="531" width="290" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee  Management System" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHf-Z2-Iea">
+                                <rect key="frame" x="51.666666666666657" y="482" width="290" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="clW-sx-nyO"/>
+                                    <constraint firstAttribute="width" constant="290" id="yuQ-Do-QyP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,10 +37,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XHf-Z2-Iea" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7mU-GU-vDV"/>
-                            <constraint firstItem="RK4-SA-W9S" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O9z-Q8-65N"/>
-                            <constraint firstItem="XHf-Z2-Iea" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nqO-Ka-Oah"/>
-                            <constraint firstItem="RK4-SA-W9S" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tmA-Xa-90a"/>
+                            <constraint firstItem="XHf-Z2-Iea" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8UM-yd-sgT"/>
+                            <constraint firstItem="RK4-SA-W9S" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bB3-74-3ca"/>
+                            <constraint firstItem="XHf-Z2-Iea" firstAttribute="top" secondItem="RK4-SA-W9S" secondAttribute="bottom" constant="8" id="hqc-DS-uFg"/>
+                            <constraint firstItem="RK4-SA-W9S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="q6c-FM-4iA"/>
                         </constraints>
                     </view>
                 </viewController>
