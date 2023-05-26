@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
         </scene>
-        <!--ToDo-->
+        <!--Employees-->
         <scene sceneID="hBo-Fu-9cR">
             <objects>
                 <viewController storyboardIdentifier="ToDoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CHs-R8-iUK" customClass="ToDoViewController" customModule="Models" customModuleProvider="target" sceneMemberID="viewController">
@@ -149,7 +149,7 @@
                             <constraint firstItem="pMz-xB-rw0" firstAttribute="trailing" secondItem="zN6-St-I6Q" secondAttribute="trailing" id="oaK-An-hWj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ToDo" id="CSJ-ER-C4X">
+                    <navigationItem key="navigationItem" title="Employees" id="CSJ-ER-C4X">
                         <barButtonItem key="rightBarButtonItem" title="Add Employee" image="person.fill.badge.plus" catalog="system" id="7NB-2c-tcu">
                             <connections>
                                 <segue destination="g9N-gx-jog" kind="show" id="0Ju-uL-jox"/>
