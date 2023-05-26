@@ -48,6 +48,7 @@ class UpdateViewController: UIViewController {
     
     @IBAction func btnup(_ sender: Any) {
         putRequest()
+        createSuccessAlert()
     }
     
     func putRequest() {
@@ -117,6 +118,12 @@ class UpdateViewController: UIViewController {
         task.resume()
     }
 
+    func createSuccessAlert() {
+        let alert = UIAlertController(title: "Success", message: "User successfully updated", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in print("OK tap")}))
+        
+        present(alert, animated: true, completion: nil)
+    }
     
 
     /*

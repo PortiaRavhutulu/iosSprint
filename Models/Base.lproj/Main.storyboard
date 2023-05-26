@@ -151,6 +151,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Employees" id="CSJ-ER-C4X">
                         <barButtonItem key="rightBarButtonItem" title="Add Employee" image="person.fill.badge.plus" catalog="system" id="7NB-2c-tcu">
+                            <color key="tintColor" red="0.32156862745098036" green="0.42745098039215684" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="g9N-gx-jog" kind="show" id="0Ju-uL-jox"/>
                             </connections>
@@ -175,18 +176,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECB-uk-D9f">
                                 <rect key="frame" x="154" y="743" width="85" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.15294117647058825" green="0.21568627450980393" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Update"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Update">
+                                    <color key="baseBackgroundColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="btnup:" destination="Taq-IT-IE1" eventType="touchUpInside" id="3MF-4B-T8z"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="R4Q-Xd-p5y">
-                                <rect key="frame" x="76" y="73" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ltt-gH-hPS">
-                                <rect key="frame" x="16" y="204" width="361" height="420"/>
+                                <rect key="frame" x="16" y="251" width="361" height="420"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfF-9X-ZcD">
@@ -214,30 +215,30 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgV-en-af0">
-                                        <rect key="frame" x="143" y="88" width="48" height="30"/>
+                                        <rect key="frame" x="143" y="88" width="39" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGh-1a-lXw">
-                                        <rect key="frame" x="124" y="248" width="86" height="30"/>
+                                        <rect key="frame" x="124" y="248" width="70" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8H-ou-usb">
-                                        <rect key="frame" x="133" y="328" width="68" height="30"/>
+                                        <rect key="frame" x="133" y="328" width="55" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsG-Wl-b2Z">
-                                        <rect key="frame" x="138" y="168" width="59" height="30"/>
+                                        <rect key="frame" x="138" y="168" width="47" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -248,18 +249,31 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0b-UK-vhU">
-                                        <rect key="frame" x="119" y="8" width="97" height="30"/>
+                                        <rect key="frame" x="119" y="8" width="79" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.90196078431372551" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6rU-2u-phg">
+                                <rect key="frame" x="138" y="95" width="117" height="97"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="tintColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98.329999999999998" id="PMG-dB-sSh"/>
+                                    <constraint firstAttribute="width" constant="117" id="i6x-68-FG4"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y2n-uX-XcB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6rU-2u-phg" firstAttribute="top" secondItem="y2n-uX-XcB" secondAttribute="top" constant="35" id="2He-0I-DfW"/>
+                            <constraint firstItem="6rU-2u-phg" firstAttribute="centerX" secondItem="54g-MT-Dn9" secondAttribute="centerX" id="FbS-da-AjD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KEd-8s-yt1"/>
                     <connections>
@@ -333,8 +347,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grF-kV-Ix9">
                                 <rect key="frame" x="35" y="748" width="85" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Update"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Update">
+                                    <color key="baseBackgroundColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="btnupdate:" destination="Eze-ux-fAs" eventType="touchUpInside" id="xWy-YE-bd3"/>
                                 </connections>
@@ -342,6 +360,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fd-bV-DmU">
                                 <rect key="frame" x="247" y="748" width="85" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <color key="tintColor" red="0.91976243260000001" green="0.20045423949999999" blue="0.13855991849999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Delete">
@@ -500,9 +521,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6y-Lx-CNI">
                                                 <rect key="frame" x="107" y="385" width="70" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.15294117647058825" green="0.21568627450980393" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Submit">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                    <color key="baseBackgroundColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnAddEmployee:" destination="g9N-gx-jog" eventType="touchUpInside" id="pn8-76-yFH"/>
@@ -576,11 +600,7 @@
     </scenes>
     <resources>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="person.fill.badge.plus" catalog="system" width="128" height="125"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
