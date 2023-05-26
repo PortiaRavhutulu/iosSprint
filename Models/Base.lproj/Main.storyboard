@@ -345,7 +345,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grF-kV-Ix9">
-                                <rect key="frame" x="35" y="748" width="85" height="31"/>
+                                <rect key="frame" x="80" y="748" width="85" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.1529411765" green="0.2156862745" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -357,8 +357,8 @@
                                     <action selector="btnupdate:" destination="Eze-ux-fAs" eventType="touchUpInside" id="xWy-YE-bd3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fd-bV-DmU">
-                                <rect key="frame" x="247" y="748" width="85" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fd-bV-DmU">
+                                <rect key="frame" x="221" y="748" width="85" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
@@ -495,11 +495,11 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2c-e6-0jZ">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2c-e6-0jZ">
                                                 <rect key="frame" x="220" y="385" width="67" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Cancel">
+                                                <buttonConfiguration key="configuration" style="filled" title="Clear">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                                 </buttonConfiguration>
