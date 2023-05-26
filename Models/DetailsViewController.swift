@@ -38,6 +38,21 @@ class DetailsViewController: UIViewController {
     }
     
 
+    @IBAction func btnupdate(_ sender: Any) {
+        
+        
+        
+        let up = self.storyboard?.instantiateViewController(withIdentifier: "UpdateViewController") as? UpdateViewController
+        
+        up?.empnumber = cellNum!
+        up?.empemail = empEmail!
+        up?.emprole = empRole!
+        up?.empsalary = empSalary!
+//        print(titleDets!)
+        
+        self.navigationController?.pushViewController(up!, animated: true)
+        
+    }
     /*
     // MARK: - Navigation
 

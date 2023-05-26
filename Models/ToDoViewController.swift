@@ -94,7 +94,11 @@ extension ToDoViewController: UITableViewDataSource, UITableViewDelegate, UISear
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController
         
+        let up = self.storyboard?.instantiateViewController(withIdentifier: "UpdateViewController") as? UpdateViewController
+        
         if searching {
+            
+            
             vc?.num = "Employee ID: \(searchingArray[indexPath.row].empId)"
             vc?.titleDets = "First name: \(searchingArray[indexPath.row].empName)"
             vc?.lName = "Last name: \(searchingArray[indexPath.row].empLastName)"
@@ -103,17 +107,22 @@ extension ToDoViewController: UITableViewDataSource, UITableViewDelegate, UISear
             vc?.empRole = "Role: \(searchingArray[indexPath.row].role)"
             vc?.empSalary = "Salary: R \(searchingArray[indexPath.row].salary)"
         } else {
+            up?.empnumber=(array[indexPath.row].cellNumber)
             vc?.num = "Employee ID: \(array[indexPath.row].empId)"
             vc?.titleDets = "First name: \(array[indexPath.row].empName)"
             vc?.lName = "Last name: \(array[indexPath.row].empLastName)"
-            vc?.cellNum = "Cell number: \(array[indexPath.row].cellNumber)"
-            vc?.empEmail = "Email: \(array[indexPath.row].email)"
-            vc?.empRole = "Role: \(array[indexPath.row].role)"
-            vc?.empSalary = "Salary: R \(array[indexPath.row].salary)"
+            vc?.cellNum = (array[indexPath.row].cellNumber)
+            vc?.empEmail = (array[indexPath.row].email)
+            vc?.empRole = (array[indexPath.row].role)
+            vc?.empSalary = "\(array[indexPath.row].salary)"
         }
         
         self.navigationController?.pushViewController(vc!, animated: true)
+//        self.navigationController?.pushViewController(up!, animated: true)
         
     }
+    
+    
+    
 }
 

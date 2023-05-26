@@ -17,6 +17,7 @@
 		4A693D412A1E07CB005D9201 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A693D402A1E07CB005D9201 /* ToDoTableViewCell.swift */; };
 		4A693D432A1E1FF9005D9201 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A693D422A1E1FF9005D9201 /* Model.swift */; };
 		4A693D452A1E487A005D9201 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A693D442A1E487A005D9201 /* DetailsViewController.swift */; };
+		AB8F69922A1F9DCA0061A331 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F69912A1F9DCA0061A331 /* UpdateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4A693D402A1E07CB005D9201 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		4A693D422A1E1FF9005D9201 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4A693D442A1E487A005D9201 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		AB8F69912A1F9DCA0061A331 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				4A693D402A1E07CB005D9201 /* ToDoTableViewCell.swift */,
 				4A693D2C2A1DFF55005D9201 /* SceneDelegate.swift */,
 				4A693D2E2A1DFF55005D9201 /* ViewController.swift */,
+				AB8F69912A1F9DCA0061A331 /* UpdateViewController.swift */,
 				4A693D302A1DFF55005D9201 /* Main.storyboard */,
 				4A693D442A1E487A005D9201 /* DetailsViewController.swift */,
 				4A693D332A1DFF56005D9201 /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 				4A693D452A1E487A005D9201 /* DetailsViewController.swift in Sources */,
 				4A693D2D2A1DFF55005D9201 /* SceneDelegate.swift in Sources */,
 				4A693D412A1E07CB005D9201 /* ToDoTableViewCell.swift in Sources */,
+				AB8F69922A1F9DCA0061A331 /* UpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
