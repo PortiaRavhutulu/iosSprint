@@ -24,6 +24,7 @@ class DetailsViewController: UIViewController {
     var empRole: String?
     var empSalary: String?
     var num: String?
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,8 @@ class DetailsViewController: UIViewController {
         
         let up = self.storyboard?.instantiateViewController(withIdentifier: "UpdateViewController") as? UpdateViewController
                
+        up?.empid = num
+        up?.empname = titleDets
         up?.empsurname = lName!
                up?.empnumber = cellNum!
                up?.empemail = empEmail!

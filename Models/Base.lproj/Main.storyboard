@@ -177,6 +177,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Update"/>
+                                <connections>
+                                    <action selector="btnup:" destination="Taq-IT-IE1" eventType="touchUpInside" id="3MF-4B-T8z"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="R4Q-Xd-p5y">
                                 <rect key="frame" x="76" y="73" width="240" height="128"/>
