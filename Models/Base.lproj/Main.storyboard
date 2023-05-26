@@ -169,7 +169,7 @@
             <objects>
                 <viewController storyboardIdentifier="UpdateViewController" id="Taq-IT-IE1" customClass="UpdateViewController" customModule="Models" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="54g-MT-Dn9">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECB-uk-D9f">
@@ -333,7 +333,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Update"/>
                                 <connections>
-                                    <segue destination="Taq-IT-IE1" kind="show" id="yKv-dW-Xok"/>
+                                    <action selector="btnupdate:" destination="Eze-ux-fAs" eventType="touchUpInside" id="xWy-YE-bd3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fd-bV-DmU">
